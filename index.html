@@ -6,7 +6,7 @@
 <body>
     <h1>YouTube Downloader</h1>
     <input type="text" id="videoUrl" placeholder="Enter YouTube Video URL">
-    <button id="downloadButton">Download</button>
+    <button id="fetchInfoButton">Fetch Video Info</button>
     
     <div id="options">
         <p>Choose download type:</p>
@@ -19,14 +19,11 @@
         <select id="resolutionSelect"></select>
     </div>
     
-    <div id="downloadPath">
-        <p>Enter download path:</p>
-        <input type="text" id="pathInput" placeholder="e.g., /sdcard/download/">
-    </div>
-    
-    <button id="startDownloadButton">Start Download</button>
+    <button id="generateDownloadLinkButton">Generate Download Link</button>
 
-    <div id="downloadStatus"></div>
+    <div id="downloadLink">
+        <a id="downloadAnchor" style="display: none;" download="video.mp4">Download Link</a>
+    </div>
 
     <script src="main.js"></script>
 </body>
